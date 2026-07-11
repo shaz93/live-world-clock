@@ -23,7 +23,7 @@ function updateClocks() {
         const cityName = tz.split("/")[1].replace("_", " ");
         const citiesList = document.querySelector("#cities-list");
         
-        // Don't add if already exists
+        
         if (document.querySelector(`.city[data-tz="${tz}"]`)) return;
 
         const div = document.createElement("div");
@@ -33,7 +33,7 @@ function updateClocks() {
         
         citiesList.prepend(div);
         
-        // Limit to 4 visible clocks for a clean interface
+        
         if (citiesList.children.length > 4) {
           citiesList.removeChild(citiesList.lastElementChild);
         }
