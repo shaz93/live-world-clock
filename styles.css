@@ -1,4 +1,4 @@
-:root {
+ :root {
         --primary: #582cd1;
         --bg-gradient: linear-gradient(135deg, #f8f7ff 0%, #ede9fe 100%);
         --card-bg: #ffffff;
@@ -31,8 +31,7 @@
       }
 
       .logo-wrapper { display: flex; justify-content: center; margin-bottom: 24px; }
-      .brand-logo { max-width: 100px; opacity: 0.85; transition: opacity 0.3s; }
-      .brand-logo:hover { opacity: 1; }
+      .brand-logo { max-width: 100px; opacity: 0.85; }
 
       h1 { text-align: center; font-size: 26px; font-weight: 800; margin-bottom: 32px; color: var(--text-main); letter-spacing: -0.5px; }
 
@@ -52,18 +51,13 @@
         appearance: none;
       }
 
-      select:focus { border-color: var(--primary); box-shadow: 0 0 0 4px rgba(88, 44, 209, 0.05); }
-
       .city {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 24px 0;
         border-bottom: 1px solid var(--border-color);
-        animation: fadeIn 0.4s ease-out;
       }
-
-      @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
 
       .city:last-child { border-bottom: none; }
       h2 { font-size: 19px; font-weight: 700; margin-bottom: 2px; }
@@ -71,4 +65,7 @@
       .time { font-size: 30px; font-weight: 800; font-variant-numeric: tabular-nums; color: var(--primary); }
       .time small { font-size: 15px; color: var(--text-muted); font-weight: 600; }
 
-      footer { margin-top: 40px; font-size: 12px; color: var(--text-muted); text-align: center; }
+      #home-link { display: none; text-align: center; margin-top: 20px; font-weight: 600; color: var(--primary); text-decoration: none; font-size: 14px; cursor: pointer;}
+      #home-link:hover { text-decoration: underline; }
+
+      footer { margin-top: 40px; font-size: 12px; color: var(--text-muted); text-align: center; font-weight: 500; }
